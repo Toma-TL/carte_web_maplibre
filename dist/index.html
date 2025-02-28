@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>prj_test_mapbox_cours_boris</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta charset='utf-8' />
+<title>MapboxGL</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" ></script>
+  
+<script src="https://unpkg.com/maplibre-gl@^5.1.1/dist/maplibre-gl.js"></script>
+<link href="https://unpkg.com/maplibre-gl@^5.1.1/dist/maplibre-gl.css" rel="stylesheet" />
+  
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+ 
+</style>
+</head>
+<body>
+  
+<header>
+    🌍 Rennes Métropole
+</header>
+  
+<div id='map'></div>
+  
+<div class='menu'>
+    <div class='menu_overlay'>
+      <hr>
+   <fieldset>
+   <label class="categoryLabel">🗃️ Données Réferentielles</label>
+<hr>
+
+      <div>
+                <input type="checkbox" id="ArretsCB" value="Arrets" onchange="switchlayer('Arrets')"/>
+                <label for="ArretsCB">Arrets de bus</label>
+            </div>
+     <div>
+      
+      
+      <input type="checkbox" id="routesCB" value="routes" onchange="switchlayer('routes')" checked/>
+                <label for="routesCB">Routes</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="hydrologieCB" value="hydrologie" onchange="switchlayer('hydrologie')" checked/>
+                <label for="hydrologieCB">Hydrologie</label>
+            </div>
+     
+     
+             <div>
+                <input type="checkbox" id="batimentsCB" value="batiments" onchange="switchlayer('batiments')"/>
+                <label for="batimentsCB">Batiments</label>
+            </div>
+     
+     
+             <div>
+                <input type="checkbox" id="StationsCB" value="Stations" onchange="switchlayer('Stations')"/>
+                <label for="StationsCB">Stations Vélo STAR</label>
+            </div>
+     
+             <div>
+                <input type="checkbox" id="CadastreCB" value="Cadastre" onchange="switchlayer('Cadastre')"/>
+                <label for="CadastreCB">Cadastre</label>
+            </div>
+     
+            <div>
+                <input type="checkbox" id="ParcrelaisCB" value="Parcrelais" onchange="switchlayer('Parcrelais')" checked/>
+                <label for="ParcrelaisCB">Parcrelais</label>
+            </div>
+     
+     
+            <div>
+                <input type="checkbox" id="boulangeriesCB" value="boulangeries" onchange="switchlayer('boulangeries')"/>
+                <label for="boulangeriesCB">Boulangeries</label>
+            </div>
+     
+            <div>
+                <input type="checkbox" id="PLUCB" value="PLU" onchange="switchlayer('PLU')"/>
+                <label for="PLUCB">PLU</label>
+            </div>     
+     
+            <div>
+                <input type="checkbox" id="RPGB" value="RPG" onchange="switchlayer('RPG')"/>
+                <label for="RPGB">RPG</label>
+            </div>
+     
+     
+     
+        </fieldset>
+      
+      <hr>
+        </fieldset>
+    </div>
+</div>
+  
+<div id="menubasemap">
+    <label for="style-selector">🌐 Choisir un fond de carte :</label>
+    <select id="style-selector">
+      <option value="https://openmaptiles.geo.data.gouv.fr/styles/fiord-color/style.json">De base</option>
+        <option value="https://openmaptiles.geo.data.gouv.fr/styles/osm-bright/style.json">Streets</option>
+        <option value="https://openmaptiles.geo.data.gouv.fr/styles/positron/style.json">Outdoors</option>
+        <option value="https://viglino.github.io/geoservice-style/cyanotype/cyanotype.json">fond bleu</option>
+        <option value="https://viglino.github.io/geoservice-style/mono/mono_gray.json">Dark</option>
+    </select>
+   <div>
+     <hr>
+<button id='Gare'>Quartier Gare-Centre</button>
+<button id='Rennes1'>Université Rennes 1</button>
+<button id='Rennes2'>Université Rennes 2</button>
+     <hr>
+</div>
+</div>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

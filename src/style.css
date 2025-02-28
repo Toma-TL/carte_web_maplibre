@@ -1,0 +1,115 @@
+
+#map {position: absolute;
+        top: 70px;
+        bottom: 0;
+        width: 100%;}
+
+header {
+        background: linear-gradient(90deg, #3c4357, #767d91);
+        color: white;
+        padding: 20px;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        border: 1px solid white;
+    }
+
+ #menubasemap {
+            position: absolute;
+            bottom: 40px;
+            right: 10px;
+            background: white;
+            padding: 10px;
+            z-index: 1000;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
+
+
+
+.menu {
+    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    position: relative;
+    width: 220px;
+    top: 180px;
+    left: 0px;
+    padding: 5px;
+    background-color: #3c4357; /* Bleu turquoise */
+    color: white; /* Texte blanc */
+}
+
+.menu .menu_overlay {
+    background-color: #3c4357; /* Fond bleu turquoise */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.10);
+    border-radius: 3px;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: white; /* Texte blanc */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.menu .menu_overlay:hover {
+    background-color: white;
+    color: #272525;
+}
+
+.menu_overlay fieldset {
+    border: none;
+    padding: 0;
+    margin: 0 0 10px;
+}
+
+.menu_overlay .categoryLabel {
+    display: block;
+    font-weight: bold;
+    font-size : 15px;
+    text-align : center;
+    margin: 0 0 5px;
+}
+
+
+
+
+
+
+
+
+
+
+.Mypopup1 .maplibregl-popup-content {
+  background-color: #ffffff;
+  color: #19191a;
+  opacity: 1;
+  text-align: center;
+  font-family: "Cambria", serif;
+  border-radius: 2px;
+  padding: 10px;
+  font-size: 8px;
+  line-height: 1.5;
+}
+
+
+
+.Mypopup2 .maplibregl-popup-content {
+  background-color: #ffffff;
+  color: #19191a;
+  opacity: 1;
+  text-align: center;
+  font-family: "Cambria", serif;
+  border-radius: 5px;
+  border-color : 'darkgrey';
+  border : 20px;
+  padding: 20px;
+  font-size: 10px;
+  line-height: 0.5;
+}
+
+
+
+
